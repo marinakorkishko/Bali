@@ -1,0 +1,389 @@
+@font-face {
+	font-family: 'Conv_MuseoSansCyrl_0';
+	src: url('fonts/MuseoSansCyrl_0.eot');
+	src: local('☺'), url('fonts/MuseoSansCyrl_0.woff') format('woff'), url('fonts/MuseoSansCyrl_0.ttf') format('truetype'), url('fonts/MuseoSansCyrl_0.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    max-width: 1920px;
+    min-width: 375px;
+    height: 100vh;
+    margin: 0 auto; 
+    font-family: 'Conv_MuseoSansCyrl_0';
+    background: url(images/bg.png) no-repeat; 
+    background-size: auto;
+    /* background-position: center; */
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 230px;
+    margin: 0 auto;
+    width: 90%;
+}  
+
+.logo {
+    background: url(images/logo.svg) no-repeat;
+    width: 146px;
+    height: 55px;
+    margin-left: 102px;
+} 
+
+.header__menu {
+    justify-content: flex-end;
+}
+
+.header__list-item {
+    font-weight: bold;
+    display: inline;
+    margin-right: 6px;
+    font-size: 23px; 
+    font-weight: bold;
+}
+.header__list-item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    text-decoration: none;
+    color: #F8EEE4;
+    margin-right: 24px;
+}
+
+@media (min-width: 769px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.wrap {
+    display: flex;
+}
+
+.info {
+    flex: 1.3;
+    height: 69vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__content {
+    max-width: 500px;
+    height: 500px;
+    padding: 5px 120px 0 0 ;
+}
+
+.content__img {
+    height: 300px;
+    width: 538px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background: url(images/baliback.png)no-repeat;
+} 
+
+.indonesia {
+    width: 460px;
+    margin: 0 0 50px 0;
+}
+
+.info-text {
+    width: 530px;
+    color: #F8EEE4;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 16px 19px;
+}
+
+.info__button {
+    cursor: pointer;
+    color: #FFF;
+    background-color: #D4BEA3;
+    border-radius: 48px;
+    font-size: 23px;
+    font-family: 'Conv_MuseoSansCyrl_0';
+    width: 293px;
+    height: 61px;
+    margin: 20px 0 0 15px;
+    outline: none;
+    border: none;
+}
+
+.content__image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 0 7px 90px;
+} 
+
+.image__item-second {
+    margin-left: 32px;
+}
+.image__item-last {
+    width: 27%;
+    margin-left: 32px;
+}
+
+@media (max-width: 1366px) {
+
+    .header {
+        height: 160px;
+    }
+
+    .logo {
+        margin: 20px 0 0 73px;
+        background-size: 72%;
+    }
+
+    .header__list-item {
+        font-size: 16px;
+        margin-left: 0;
+
+    }
+
+    .header__list-item:last-child {
+        margin-right: 0;
+    } 
+
+    .header__link {
+        margin-right: 16px;
+    }
+
+    .info__content {
+        height: 360px;
+    }
+
+    .content__img {
+        height: 299px;
+        width: 537px;
+        background-size: 68%;
+        margin-left: 95px;
+        margin-top: 3px;
+
+    }
+
+    .indonesia {
+        width: 330px;
+        margin: 0px 150px 116px 0;
+    }
+
+    .info-text {
+        width: 400px;
+        color: #F8EEE4;
+        font-size: 16px;
+        margin: -83px 0px 0px 110px;
+        line-height: 18px;
+    }
+
+    .info__button {
+        width: 210px;
+        height: 44px;
+        font-size: 17px;
+        margin: 27px 0px 0px 106px;
+        line-height: 18px;
+    }
+
+    .content__image {
+        margin: 0 0 -3px 90px;
+    }
+
+    .image__item {
+        width: 41%;
+        margin-left: 0;
+    }
+
+    .image__item-second {
+        width: 37%;
+        margin-left: 22px;
+    }
+    .image__item-last {
+        width: 27%;
+        margin-left: 20px;
+    }
+}  
+
+@media (max-width: 1024px) {
+    .header {
+        width: 95%;
+    }
+    .logo {
+        margin: 20px 0 0 14px;
+    }
+
+    .header__list {
+        padding-top: 8px;
+    }
+
+    .info__content {
+        padding: 0;
+    }
+
+    .content__image {
+        margin: 0 78px -10px 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .content__img {
+        margin-top: 7px;
+        margin-left: 26px;
+    }
+
+    .info-text {
+        margin: -83px 0px 0px 40px;
+    }
+
+    .info__button {
+        margin: 29px 0px 0px 39px;
+    }
+
+    .image__item {
+        width: 55%;
+        margin-left: -22px;
+        margin-right: 24px;
+    }
+
+    .image__item-second {
+        width: 49%;
+        margin: 0;
+    }
+
+    .image__item-last {
+        width: 36%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    .header{
+        width: 132%;
+    }
+
+    .logo {
+        margin: 26px 0 0 62px;
+        background-size: 98%;
+        width: 157px;
+        height: 58px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+      }
+
+    /* стилизуем кнопку */
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        width: 37px;
+        cursor: pointer;
+        z-index: 1;
+        margin-top: 9px;
+        margin-left: 2px;
+  }
+  /* гамбургер */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 98%;
+        height: 4px;
+        background-color: #FCF5ED;
+  }
+    .menu__btn > span::before {
+        content: '';
+        top: -10px;
+  }
+    .menu__btn > span::after {
+        content: '';
+        top: 10px;
+  }
+
+  /* контейнер меню */
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 259px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+   }
+  /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 27px 32px;
+        color: #000;
+        font: bold 46px/37px 'Conv_MuseoSansCyrl_0';
+       text-decoration: none;
+
+  }
+    .menu__item:hover {
+        background-color: #FCF5ED;
+  }
+
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+  }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+  }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+  }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+  }
+
+     .content__img {
+        margin-top: 68px;
+        margin-left: 28px;
+        background-size: 87%;
+}
+    .indonesia {
+        width: 422px;
+        margin: 0px 28px 52px 0;
+    }
+
+    .content__image {
+        display: none;
+    }
+
+    .info-text {   
+        width: 88%;
+        font-size: 28px;
+        margin: 29px 0px 0px 74px;
+        line-height: 32px;
+    }
+
+    .info__button {
+        margin: 54px 0px 149px 117px;
+        width: 310px;
+        height: 67px;
+        font-size: 25px;
+        line-height: 18px;
+    }
+
+}
